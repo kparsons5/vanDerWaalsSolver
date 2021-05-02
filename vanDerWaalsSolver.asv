@@ -25,16 +25,15 @@ gui.critPressText = uicontrol('style','text','position',...
     [20 200 70 40], 'string','Critical Pressure of Species:','horizontalalignment','left');
 gui.critPressInput = uicontrol('style','edit','position',[20 175 100 20]);
 
-%drop down menus for units
-gui.tempUnits = uicontrol('style','popupmenu','string',{'Celsius';'Kelvin'},'position',[120 375 100 20],'horizontalalignment','left');
-gui.pressUnits = uicontrol('style','popupmenu','string',{'Atmospheres';'Pascals'},'position',[120 325 100 20],'horizontalalignment','left');
-gui.critTempUnits = uicontrol('style','popupmenu','string',{'Celsius';'Kelvin'},'position',[120 245 100 20],'horizontalalignment','left');
-gui.critPressUnits = uicontrol('style','popupmenu','string',{'Atmospheres';'Pascals'},'position',[120 175 100 20],'horizontalalignment','left');
+%drop down menus
+gui.tempUnits = uicontrol('style','popupmenu','string',{'Celcius';'Kelvin'},'position',[20 305 100 20],'horizontalalignment','left'); %choose either L or m^3 units
 
-  function [] = solve()
+
+ %   function [] = solve()
         %calculate a and b constants 
         
-  end
+        
+%    end
 
 %    function [] convertUnits()
         %if temp given in celcius, convert to kelvin 
