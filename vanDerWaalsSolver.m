@@ -38,7 +38,7 @@ gui.convertUnits = uicontrol('style','pushbutton','position',[20 100 100 20],'st
 
 gui.solve = uicontrol('style','pushbutton','position',[20 100 0 20],'string','Solve','horizontalalignment','left','callback',{@solve});
 
-%%output answers
+
 
 
 end
